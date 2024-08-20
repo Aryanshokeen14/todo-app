@@ -85,7 +85,7 @@ function App() {
          <div className='h-[1px] bg-black opacity-15 w-[90%] mx-auto my-2'></div>
          <h2 className='text-2xl font-bold'>Your Todos</h2>
          <div className="todos">
-          {todos.length ===0 && <div className='m-5'>No Todos to display</div> }
+          {todos.length === 0 && <div className='m-5'>No Todos to display</div> }
           {todos.map(item=>{
  
           return (showFinished || !item.isCompleted) && <div key={item.id} className={"todo flex my-3 justify-between "}>
